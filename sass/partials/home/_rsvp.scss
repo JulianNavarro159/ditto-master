@@ -1,0 +1,193 @@
+.rsvp-partial-59a1c2 {
+    .images{
+        position: relative;
+        .flower-rsvp{
+            position: absolute;
+            max-width: 550px;
+            height: auto;
+            top: 46%;
+            left: -100%;
+            transform: translateY(-10%);
+            // @media(max-width:640px){
+            //     left: -9%;
+            //     top: 0;
+            //     max-width: 40px;
+            // }
+        }
+    }
+    .texts{
+        text-align: center;
+        .before-title{
+            font-family: $title;
+            color: $four_color;
+            font-size: 122px;
+            line-height: .6;
+            margin-bottom: 0;
+            position: relative;
+            top: 1rem;
+            @media(max-width:768px){
+                font-size: calc(3.6rem + 3.06vw);
+            }
+            @media screen and (min-width:769px) and (max-width:1350px){
+                font-size: calc(5.6rem + 3.06vw);
+            }
+        }
+        .title{
+            font-family: $primary;
+            color: $primary_color;
+            font-size: 4rem;
+            margin-bottom: 3rem;
+            @media(max-width:768px){
+                font-size: 3rem;
+            }
+        }
+        .description{
+            font-family: $primary;
+            color: $primary_color;
+            font-size: 22px;
+            @media(max-width:768px){
+                font-size: 16px;
+            }
+        }
+    }
+    .form{
+        text-align: center;
+        .intput-container{
+            br{
+                display:none;
+            }
+            label{
+                display: block;
+                font-family: $primary;
+                font-size: 18px;
+                color: $primary_color;
+                margin-bottom: 0;
+                @media(max-width:768px){
+                    font-size: 16px;
+                }
+            }
+            input, textarea{
+                border: none;
+                background: transparent;
+                border-bottom: 1px solid black;
+                width: 100%;
+                outline: none;
+                height: 40px;
+                padding: 0 1rem;
+                font-family: $primary;
+                color: $primary_color;
+                font-size: 18px;
+                margin-bottom: 1rem;
+                @media(max-width:768px){
+                    font-size: 16px;
+                }
+            }
+        }
+        /*=========== Radio buttons ===========*/
+        .radio-contain{
+            br{
+                display: none;
+            }
+            label{
+                display: block;
+                font-family: $primary;
+                font-size: 18px;
+                color: $primary_color;
+                margin-bottom: 1rem;
+                @media(max-width:768px){
+                    font-size: 16px;
+                }
+            }
+            .wpcf7-form-control-wrap{
+                display: block;
+                width: 190px;
+                margin: 0 auto;
+                position: relative;
+                .wpcf7-radio{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    .wpcf7-list-item {
+                        margin: 0;
+                        label{
+                            margin: 0;
+                            display: flex;
+                            margin-bottom: 1rem;
+                            cursor: pointer;
+                            input[type="radio"]{
+                                display: none;
+                            }
+                            .radio-animate{
+                                min-width: 25px;
+                                height: 25px;
+                                border-radius: 50%;
+                                border: 1px solid $primary_color;
+                                position: relative;
+                                margin-right: 1.2rem;
+                                &::before{
+                                    content: '';
+                                    width: 18px;
+                                    height: 18px;
+                                    background: $primary_color;
+                                    position: absolute;
+                                    top: 25%;
+                                    left: 25%;
+                                    transform: translate(-20%, -20%);
+                                    border-radius: 50%;
+                                    transition: .2s;
+                                    visibility: hidden;
+                                }
+                            }
+                            .wpcf7-list-item-label{
+                                min-width: 100px;
+                                text-align: left;
+                                font-family: $primary;
+                                color: $primary_color;
+                                font-size: 18px;
+                                @media(max-width:768px){
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .wpcf7-list-item.active{
+                        .radio-animate{
+                            &::before{
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .submit-container{
+            p{
+                position: relative;
+                text-align: center;
+                input{
+                    border: 1px solid $primary_color;
+                    padding: 7px 2rem;
+                    border-radius: 0;
+                    outline: none;
+                    color: $primary_color;
+                    font-family: $primary;
+                    font-size: 22px;
+                    background: transparent;
+                    transition: .2s;
+                    &:hover{
+                        background: $primary_color;
+                        color: $secondary_color;
+                    }
+                    @media(max-width:768px){
+                        font-size: 20px;
+                    }
+                }
+                .wpcf7-spinner{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}

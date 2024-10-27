@@ -1,0 +1,111 @@
+#hotels-template-1f492b {
+    padding: 2rem 1rem;
+    padding-top: 9rem;
+    @media(max-width:768px){
+        padding-top: 3rem;
+    }
+    .title{
+        position: relative;
+        .flowers{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            position: absolute;
+            top: 68%;
+            left: 33%;
+            transform: translate(-50%, -50%);
+            img{
+                max-width: 580px;
+            }
+            @media(max-width:500px){
+                width: 119%;
+                img{
+                    max-width: 40px;
+                }
+            }
+            @media screen and (min-width:501px) and (max-width:991px){
+                width: 110%;
+                img{
+                    max-width: 70px;
+                }
+            }
+            @media screen and (min-width:992px) and (max-width:1200px){
+                width: 80%;
+            }
+        }
+        h1{
+            font-family: $primary;
+            color: $primary_color;
+            font-size: 4rem;
+            margin: 4rem 0 7rem 0;
+            letter-spacing: 5px;
+            text-align: center;
+            @media(max-width:768px){
+                font-size: 3rem;
+            }
+        }
+    }
+    .hotels-list{
+        margin-top: 200px;
+        .image-contain{
+            margin-bottom: 1rem;
+            padding: 1.5rem;
+            position: relative;
+            &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                left: 91%;
+                bottom: 0;
+                transform: translate(-91%, -1%);
+                background: var(--four-color);
+                width: 90%;
+                height: 75%;
+            }
+            img{
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            @media(max-width: 768px){
+                padding: 0;
+                margin-bottom: 2rem;
+                &::before{
+                    left: 96%;
+                    transform: translate(-91%, 10%);
+                    width: 98%;
+                    height: 81%;
+                }
+            }
+        }
+        .text-container{
+            padding: 0 1rem;
+            margin-bottom: 4rem;
+            h2{
+                font-size: 25px;
+                font-family: $primary;
+                color: $primary_color;
+            }
+            .map{
+                font-size: 16px;
+                font-family: $primary;
+                color: $primary_color;
+                text-decoration: none;
+                display: block;
+                width: fit-content;
+                margin-bottom: 1rem;
+            }
+            .hotel-cta{
+                font-family: $primary;
+                background: #D3B185;
+                width: 100%;
+                display: block;
+                padding: 11px 0;
+                color: #FFFFFF;
+                text-decoration: none;
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+    }
+}

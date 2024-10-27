@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../Fonts/Raleway-Thin.woff2') format('woff2'),
+        url('../Fonts/Raleway-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pinyon Script';
+    src: url('../Fonts/PinyonScript-Regular.woff2') format('woff2'),
+        url('../Fonts/PinyonScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../Fonts/Raleway-Medium.woff2') format('woff2'),
+        url('../Fonts/Raleway-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+// Font title
+@font-face {
+    font-family: 'bacalisties';
+    src: url('../Fonts/Alloystan.woff2') format('woff2'),
+        url('../Fonts/Alloystan.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+// Fonts primaries
+@font-face {
+    font-family: 'Bodoni Moda';
+    src: url('../Fonts/BodoniModa18pt-BoldItalic.woff2') format('woff2'),
+        url('../Fonts/BodoniModa18pt-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Bodoni Moda';
+    src: url('../Fonts/BodoniModa18pt-Bold.woff2') format('woff2'),
+        url('../Fonts/BodoniModa18pt-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Bodoni Moda';
+    src: url('../Fonts/BodoniModa9pt-Italic.woff2') format('woff2'),
+        url('../Fonts/BodoniModa9pt-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Bodoni Moda';
+    src: url('../Fonts/BodoniModa9pt-Regular.woff2') format('woff2'),
+        url('../Fonts/BodoniModa9pt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+//Font family
+$primary: 'Bodoni Moda';
+$title: 'bacalisties';
+$tertiary: 'Raleway';
+$cursive: 'Pinyon Script';
+// Colors
+$primary_color: var(--main-color);
+$secondary_color: var(--secondary-color);
+$third_color: var(--third-color);
+$four_color: var(--four-color);
+
+html{
+    width: 100%;
+    overflow-x: hidden;
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+}

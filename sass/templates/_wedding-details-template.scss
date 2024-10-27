@@ -1,0 +1,194 @@
+#wedding-details-template-8771dd {
+    section{
+        padding: 9rem 1rem 2rem 1rem;
+        .title{
+            text-align: center;
+            position: relative;
+            .flowers{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                position: absolute;
+                top: 68%;
+                left: 33%;
+                transform: translate(-50%, -50%);
+                img{
+                    max-width: 580px;
+                }
+                @media(max-width:500px){
+                    width: 119%;
+                    img{
+                        max-width: 40px;
+                    }
+                }
+                @media screen and (min-width:501px) and (max-width:991px){
+                    width: 110%;
+                    img{
+                        max-width: 70px;
+                    }
+                }
+                @media screen and (min-width:992px) and (max-width:1200px){
+                    width: 80%;
+                }
+            }
+            h1{
+                font-family: $primary;
+                color: black;
+                font-size: 4rem;
+                margin-bottom: 5rem;
+                letter-spacing: 5px;
+                @media(max-width:768px){
+                    font-size: 2.5rem;
+                }
+                span{
+                    font-family: $title;
+                    color: black;
+                    font-size: 122px;
+                    line-height: .3;
+                    margin-bottom: 0;
+                    position: relative;
+                    top: 2.2rem;
+                    letter-spacing: 0;
+                    z-index: 0;
+                    @media(max-width:768px){
+                        font-size: calc(3.6rem + 3.06vw);
+                    }
+                    @media screen and (min-width:769px) and (max-width:1350px){
+                        font-size: calc(5.6rem + 3.06vw);
+                    }
+                }
+            }
+        }
+        .wedding-list{
+            position: relative;
+            padding-bottom: 3rem;
+            &::before{
+                content: '';
+                width: 2px;
+                height: 100%;
+                background: black;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                @media(max-width:768px){
+                    transform: translate(0, -50%);
+                    left: 0;
+                }
+            }
+            .row{
+                .item{
+                    text-align: right;
+                    padding: 0 2rem;
+                    margin-bottom: 2rem;
+                    img{
+                        width: 70px;
+                        height: auto;
+                    }
+                    h5{
+                        font-family: "Bodoni Moda";
+                        color: black;
+                        font-size: 29px;
+                        letter-spacing: 0px;
+                        margin-bottom: 0.5rem;
+                        background: var(--four-color);
+                        padding: 0px;
+                        margin-top: 15px;
+                        max-width: fit-content;
+                    }
+                    hr{
+                        width: 150px;
+                        height: 1px;
+                        background: black;
+                        opacity:1;
+                        margin-left: auto;
+                    }
+                    h3{
+                        font-family: $cursive;
+                        font-size: 25px;
+                        color: black;
+                        margin-bottom: 2rem;
+                        position: relative;
+                        &::before{
+                            content: '';
+                            width: 150px;
+                            height: 1px;
+                            background: black;
+                            position: absolute;
+                            top: 88px;
+                            right: 0;
+                            @media(max-width:768px){
+                                left: 0;
+                                top: 78px;
+                            }
+                        }
+                        span{
+                            font-family: $primary;
+                            font-weight: normal;
+                            font-size: 30px;
+                        }
+                        @media(max-width:1150px){
+                            font-size: 18px;
+                            span{
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                    p{
+                        font-family: $primary;
+                        color: black;
+                        font-size: 20px;
+                        a{
+                            color: black;
+                            font-size: 16px;
+                            text-decoration: none;
+                        }
+                        @media(max-width:768px){
+                            font-size: 16px;
+                            a{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    .p-size{
+                        font-family: $primary;
+                        color: black;
+                        font-size: 20px !important;
+                        @media(max-width:768px){
+                            font-size: 16px !important;
+                        }
+                    }
+                    @media(max-width:768px){
+                        text-align: left;
+                    }
+                }
+            }
+            .row:nth-child(2n){
+                .item{
+                    margin-left: auto;
+                    text-align: left;
+                    margin-bottom: 2rem;
+                    @media(max-width:768px){
+                        margin: 0;
+                    }
+                    hr{
+                        margin-left: 0;
+                        margin-right: auto;
+                    }
+                    h3{
+                        &::before{
+                            left: 0;
+                        }
+                    }
+                }
+            }
+            .row:nth-child(2n + 1){
+                .item{
+                    h5{
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+}

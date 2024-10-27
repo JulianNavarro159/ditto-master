@@ -1,0 +1,57 @@
+.count-down-partial-e5bffa {
+    padding: 15rem 1rem;
+    .card-container{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        border: solid 1px;
+        border-radius: 50px;
+    }
+    .title-card-container{
+        padding: 10px;
+        // background-color: #756E31;
+        border-radius: 50px 50px 0 0;
+    }
+    .body-card{
+        padding: 15px;
+    }
+    h2{
+        margin: 0;
+    }
+    .image-above-container{
+        display: flex;
+        width: auto;
+        .image-above{
+            width: 50%;
+            height: auto;
+            margin: 5px auto 20px auto;
+            object-fit: cover;
+        }
+    }
+    #countdown{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .item-count{
+            margin: 0 1rem;
+            text-align: center;
+            font-family: $primary;
+            font-weight: normal;
+            span:first-child{
+                font-size: 1.7rem;
+                @media(max-width:1150px){
+                    font-size: calc(1.1rem + 3.06vw);
+                }
+            }
+            span:last-child{
+                font-size: 20px;
+            }
+            @media(max-width:768px){
+                margin: 0 1rem;
+                span:last-child{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
